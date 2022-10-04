@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ active }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="tmp-menu" data-state={isOpen}>
@@ -15,16 +15,39 @@ export default function Navbar() {
                     <span></span>
                     <span></span>
                 </div>
-                <a href="/" className="active">
+                <a
+                    href="/"
+                    className={active === "accueil" ? "active" : undefined}
+                >
                     Accueil
                 </a>
-                <a href="/presentation">Présentation</a>
-                <a href="/competences">Compétences</a>
-                <a href="/projets">Projets</a>
+                <a
+                    href="/presentation"
+                    className={active === "presentation" ? "active" : undefined}
+                >
+                    Présentation
+                </a>
+                <a
+                    href="/competences"
+                    className={active === "competences" ? "active" : undefined}
+                >
+                    Compétences
+                </a>
+                <a
+                    href="/projets"
+                    className={active === "projets" ? "active" : undefined}
+                >
+                    Projets
+                </a>
                 <a href="CV_HATTAB_Sami.pdf" target="_blank">
                     CV
                 </a>
-                <a href="/contact">Contact</a>
+                <a
+                    href="/contact"
+                    className={active === "contact" ? "active" : undefined}
+                >
+                    Contact
+                </a>
             </div>
         </nav>
     );
