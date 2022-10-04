@@ -1,0 +1,127 @@
+.tmp-menu {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 2.15rem 2rem; /* 34.4px 0 */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    top: 0;
+    z-index: 2;
+}
+
+.tmp-menu a {
+    text-decoration: none;
+    color: #171717;
+}
+
+.tmp-menu .home-link {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.5rem; /* 24px */
+    margin-top: 0.2rem;
+}
+
+.tmp-menu .site-links {
+    margin-top: 0.35rem;
+}
+
+.tmp-menu .site-links a {
+    font-family: Montserrat;
+    font-size: 0.9rem; /* 14.4px */
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
+}
+
+.tmp-menu .site-links a:hover {
+    color: rgb(0, 52, 209);
+}
+
+.tmp-menu .site-links a.active {
+    color: royalblue;
+}
+
+.tmp-menu .burger {
+    display: none;
+    padding-top: 3.5px;
+    cursor: pointer;
+}
+
+.tmp-menu .burger span {
+    display: block;
+    width: 1.75rem;
+    height: 2px;
+    background-color: #171717;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.tmp-menu .burger span:nth-child(1),
+.tmp-menu .burger span:nth-child(2) {
+    margin-bottom: 7px;
+}
+
+.tmp-menu[data-state="true"] .burger span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    margin-bottom: 15px;
+    margin-right: -5px;
+}
+
+.tmp-menu[data-state="true"] .burger span:nth-child(2) {
+    display: none;
+}
+
+.tmp-menu[data-state="true"] .burger span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin-right: -5px;
+}
+
+@media screen and (max-width: 840px) {
+    .tmp-menu {
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+    }
+
+    .tmp-menu .site-links {
+        text-align: right;
+    }
+
+    .tmp-menu .site-links a {
+        margin-left: 0;
+    }
+
+    .tmp-menu[data-state="false"] .site-links a {
+        display: none;
+    }
+
+    .tmp-menu[data-state="true"] .site-links a {
+        display: block;
+        padding: 0.45rem 0;
+    }
+    .tmp-menu[data-state="true"] .site-links a:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .tmp-menu .burger {
+        display: inline-block;
+    }
+
+    .tmp-menu[data-state="true"] .burger {
+        margin-bottom: 20px;
+    }
+}
