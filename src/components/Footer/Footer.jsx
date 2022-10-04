@@ -1,5 +1,7 @@
 import "./Footer.css";
 
+import CV from "../../assets/Cv_HATTAB_Sami.pdf";
+
 export default function Footer() {
     return (
         <footer className="tmp-footer">
@@ -21,19 +23,19 @@ export default function Footer() {
             <nav className="menu">
                 <h2>Menu</h2>
                 <div className="links">
-                    <a href="index.html">Accueil</a>
+                    <a href="/">Accueil</a>
                     <br />
-                    <a href="presentation.html">Présentation</a>
+                    <a href="/presentation">Présentation</a>
                     <br />
-                    <a href="competences.html">Compétences</a>
+                    <a href="/competences">Compétences</a>
                     <br />
-                    <a href="Projets.html">Projets</a>
+                    <a href="/projets">Projets</a>
                     <br />
-                    <a href="CV_Alternance_2019_SamiHattab.pdf" target="_blank">
+                    <a href={CV} target="_blank" rel="noreferrer">
                         CV
                     </a>
                     <br />
-                    <a href="contact.php">Contact</a>
+                    <a href="/contact">Contact</a>
                 </div>
             </nav>
         </footer>
