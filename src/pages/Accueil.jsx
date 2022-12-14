@@ -2,7 +2,7 @@ import AccueilContent from "../components/AccueilContent/AccueilContent";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 
-export default function Accueil() {
+const Accueil = () => {
     return (
         <>
             <Navbar active="accueil" />
@@ -12,4 +12,6 @@ export default function Accueil() {
             <Footer />
         </>
     );
-}
+};
+
+export default Accueil;

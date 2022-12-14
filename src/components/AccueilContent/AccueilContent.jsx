@@ -81,7 +81,7 @@ export default function AccueilContent() {
                         Brétigny sur Orge, Île de France
                         <br />
                         Diplomé d'un Master en Développement Web à L’Ecv
-                        Digitale de Paris
+                        Digital de Paris
                         <br />
                         Développeur front-end
                     </p>

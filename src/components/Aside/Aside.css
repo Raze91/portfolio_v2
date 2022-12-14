@@ -1,0 +1,58 @@
+/* Page aside */
+
+.tmp-aside {
+    font-size: 0.95rem;
+}
+
+.tmp-aside h2 {
+    margin-top: 0.6rem;
+    margin-bottom: 2.15rem;
+}
+
+.tmp-aside p {
+    line-height: 1.5;
+}
+
+.tmp-aside .infos p {
+    margin-bottom: 0.5rem;
+}
+
+.tmp-aside .infos a:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.tmp-aside .projects h2 {
+    margin-top: 2.5rem;
+}
+
+.tmp-aside .projects h3 {
+    color: royalblue;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.tmp-aside .projects a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 840px) {
+    .tmp-aside {
+        border-top: 1px solid #787878;
+        margin-top: 2.75rem;
+        padding-top: 2rem;
+    }
+}
+@media screen and (min-width: 841px) {
+    .tmp-main:not(.home) {
+        display: flex;
+    }
+    .tmp-content {
+        width: 63.5%;
+    }
+    .tmp-aside {
+        padding-left: 3.15rem;
+        width: 36.5%;
+    }
+}
