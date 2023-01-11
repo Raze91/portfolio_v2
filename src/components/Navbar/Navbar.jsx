@@ -5,7 +5,7 @@ export default function Navbar({ active }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="tmp-menu" data-state={isOpen}>
-            <a href="index.html" className="home-link">
+            <a href="/" className="home-link">
                 Sami Hattab
             </a>
 
@@ -28,26 +28,26 @@ export default function Navbar({ active }) {
                     Présentation
                 </a>
                 <a
-                    href="/competences"
-                    className={active === "competences" ? "active" : undefined}
+                    href="/skills"
+                    className={active === "skills" ? "active" : undefined}
                 >
                     Compétences
                 </a>
                 <a
                     href="/projets"
-                    className={active === "projets" ? "active" : undefined}
+                    className={active === "projects" ? "active" : undefined}
                 >
                     Projets
                 </a>
                 <a href="CV_HATTAB_Sami.pdf" target="_blank">
                     CV
                 </a>
-                <a
+                {/* <a
                     href="/contact"
                     className={active === "contact" ? "active" : undefined}
                 >
                     Contact
-                </a>
+                </a> */}
             </div>
         </nav>
     );

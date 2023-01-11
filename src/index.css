@@ -233,6 +233,12 @@ body {
     color: #171717;
 }
 
+.tmp-title3 {
+    font-family: Montserrat;
+    font-size: 1.25rem; /* 28px */
+    color: #171717;
+}
+
 /* Links & buttons */
 
 a {

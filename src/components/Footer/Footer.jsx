@@ -27,15 +27,15 @@ export default function Footer() {
                     <br />
                     <a href="/presentation">Présentation</a>
                     <br />
-                    <a href="/competences">Compétences</a>
+                    <a href="/skills">Compétences</a>
                     <br />
                     <a href="/projets">Projets</a>
                     <br />
                     <a href={CV} target="_blank" rel="noreferrer">
                         CV
                     </a>
-                    <br />
-                    <a href="/contact">Contact</a>
+                    {/* <br />
+                    <a href="/contact">Contact</a> */}
                 </div>
             </nav>
         </footer>

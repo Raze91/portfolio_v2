@@ -20,7 +20,7 @@ export default function AccueilContent() {
                 "Mes renseignements personnels, mon parcours scolaire, mes expériences professionnelles ainsi que mes passions et hobbies",
         },
         {
-            href: "/competences",
+            href: "/skills",
             src: CompetencesSvg,
             alt: "Pictogramme représentant un arc et une flêche",
             title: "Compétences",
@@ -94,10 +94,10 @@ export default function AccueilContent() {
                         >
                             Télécharger mon CV
                         </a>
-                        <br />
+                        {/* <br />
                         <a href="/contact" className="tmp-btn">
                             Me contacter
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </header>

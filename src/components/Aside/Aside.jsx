@@ -49,10 +49,10 @@ const Aside = () => {
                 >
                     Télécharger mon CV
                 </a>
-                <br />
+                {/* <br />
                 <a href="contact.php" className="tmp-btn-small">
                     Me contacter
-                </a>
+                </a> */}
             </section>
 
             <section className="projects">
