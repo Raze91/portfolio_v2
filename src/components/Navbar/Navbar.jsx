@@ -34,7 +34,7 @@ export default function Navbar({ active }) {
                     Compétences
                 </a>
                 <a
-                    href="/projets"
+                    href="/projects"
                     className={active === "projects" ? "active" : undefined}
                 >
                     Projets
